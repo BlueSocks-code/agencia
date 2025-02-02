@@ -1,0 +1,42 @@
+/* ESTILOS PARA LA PÁGINA 'ABROAD.HTML' */
+/* Div de apartado 1 */
+#portada3 {
+    background-image: url('/fotos/tokyo.jpg'); /* Ruta de la imagen */
+}
+
+/* Estilo título 3 */
+.titulo3 {
+    position: absolute;
+    z-index: 1; /* Asegura que esté sobre la foto de portada */
+    font-family: HelveticaNowDisplay,Arial,sans-serif;
+}
+
+/* Dar estilo a enlace */
+.titulo3 a{
+    text-decoration-line: none;
+    color: white;
+}
+
+/* Cambio del color de la barra de navegación */
+#nav3 a {
+    color: white;
+}
+
+/* insertar fotos de destinos internacionales (Apartado 2) */
+#insertarfoto7{
+    background-image: url('/fotos/vegas.jpg'); /* inseratar imagen */ 
+}
+
+#insertarfoto8 {
+    background-image: url('/fotos/london.jpg'); /* insertar imagen */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+#insertarfoto9 {
+    background-image: url('/fotos/paris.jpg'); /* insertar imagen */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+#insertarfoto10{
+    background-image: url('/fotos/roma.jpg'); /* inseratar imagen */ 
+}

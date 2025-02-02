@@ -1,0 +1,146 @@
+/* HACER LA PÁGINA WEB RESPONSIVE MODIFICANDO EL COMPORTAMIENTO DE ELEMENTOS CONCRETOS */
+/* Hacer la página responsive para pantallas grandes */
+@media (max-width: 2000px){
+    /* Página 'INDEX.HTML' */
+    #golden{
+        font-size: 13rem;
+    }
+    #travel{
+        font-size: 6rem;
+    }
+    /* Página 'LOCAL.HTML' */
+    #local{
+        font-size: 8rem;
+        margin-bottom: 10rem;
+        margin-right: 25rem;
+    }
+    
+    .titulo2{
+        font-size: 2.7rem;
+    }
+}
+/* Hacer la página responsive para pantallas medianas */
+@media (max-width: 1800px) {
+    /* Página 'INDEX.HTML' */
+    #golden{
+        font-size: 9rem;
+        margin-top: -8rem;
+    }
+    #travel{
+        font-size: 3.5rem;
+        margin-left: 35rem;
+    }
+    .navbar a {
+        font-size: 1.4rem;
+    }
+    #unob {
+        font-size: 1.3rem;
+        right: 13rem;
+    }
+    #dosb {
+        font-size: 1.3rem;
+        right: 33rem;
+    }
+    .slogan{
+        font-size: 1.1rem;
+    }
+    .nosotros{
+        margin-right: 5rem;
+    }
+    .fotosa3 {
+        width: 100%;
+        height: 30rem;
+    }
+    .cuadrado{
+        width: 23rem; /* Ancho del cuadrado */
+        height: 16rem; /* Altura del cuadrado */
+        font-size: 1rem;
+    }
+    .cuadrado strong {
+        font-size: 1.2rem;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    /* Página 'LOCAL.HTML' */
+    #local {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+        margin-right: 23rem;
+    }
+    /* Página 'REVIEW.HTML' */
+    .titulo2{
+        font-size: 2.7rem;
+    }
+    .columna{
+        flex: 24.2%;
+    }
+}
+/* Hacer la página responsive para pantallas pequeñas */
+@media (max-width: 820px) {
+    /* Página 'INDEX.HTML' */
+    #golden{
+        font-size: 7.6rem;
+        margin-top: -4.5rem;
+    }
+    #travel{
+        font-size: 2.5rem;
+        margin-left: 25rem;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+    #unob {
+        font-size: 1.1rem;
+        right: 3rem;
+    }
+    #dosb {
+        font-size: 1.1rem;
+        right: 20rem;
+    }
+    .webelieve{
+        font-size: 3rem;
+    }
+    .tabla td{
+        font-size: 0.8rem;
+        padding: inherit;
+    }
+    .frase{
+        font-size: 0.6rem;
+    }
+    .nosotros{
+        margin-right: 4rem;
+    }
+    .tabla{
+        box-sizing:border-box;
+    }
+    .fotosa3 {
+        width: 100%;
+        height: 25rem;
+    }
+    .cuadrado{
+        width: 16rem; /* Ancho del cuadrado */
+        height: 9rem; /* Altura del cuadrado */
+        font-size: 0.7rem;
+    }
+    .cuadrado strong {
+        font-size: 0.9rem;
+    }
+    /* Página 'LOCAL.HTML' */
+    #local {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+        margin-right: 7rem;
+    }
+    /* Página 'REVIEW.HTML' */
+    .columna{
+        flex: 100%;
+    }
+}

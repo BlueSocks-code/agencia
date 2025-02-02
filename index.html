@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="icon" href="fotos/logo_black.png" type="image/jpeg"> <!-- Logo en la pestaña -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Golden Travel</title>
+</head>
+<body>
+    <!-- Contenedor de la portada/landingpage (Apartado 1)-->
+     <main>
+    <div class="portada">
+        <div>
+            <!-- Barra de navegación -->
+            <nav class="navbar">
+                <a href="local.html">Local</a>
+                <a href="/abroad.html">Abroad</a>
+                <a href="/review.html">Review</a>
+            </nav>            
+        </div>
+        
+        <header>
+        <!-- Nombre de la página -->
+            <div class="titulo" id="golden">
+                <h2>
+                    <a href="index.html"> Golden</a>
+                </h2>
+            </div>
+
+            <div class="titulo" id="travel">
+                <h2>
+                    <a href="index.html">Travel</a>
+                </h2>
+            </div>
+        </header>
+
+        <div class="landingpage" id="portada1">
+            <!-- Aquí va la foto de portada -->
+        </div>
+
+        <!-- Botón de Ofertas -->
+        <div>
+            <button class="boton" type="button" id="unob">
+                Exclusive Offers Just for You                
+            </button>
+        </div>
+        
+        <!-- Botón de contacto -->
+         <div>
+            <a href="#contact-section">
+                <button class="boton" type="button" id="dosb">
+                    Contact us!
+                </button>
+            </a>
+         </div>
+
+         <!-- Slogan de la empresa -->
+         <div class="slogan">
+            <p>Experience the World, the Golden Way!</p>
+         </div>
+    </div>
+    </main>
+
+    <!-- Divisor de apartado -->
+    <div class="divider"></div>
+
+    <!-- (Apartado 2) -->
+    <div class="nosotros">
+        <h2 class="webelieve">Travel should be more than logistics; it
+             should be a journey of personal discovery and comfort.
+              With Golden Travel, every detail is crafted to ensure
+               an unforgettable experience.</h2>
+
+               <table class="tabla">
+                <tr>
+                    <td>
+                        <strong class="linea">Personalized Journeys</strong>
+                        <p class="frase">Create customized travel experiences
+                         tailored to your interests and preferences.</p>
+                    </td>
+                    <td>
+                        <strong class="linea">Transparent Pricing</strong>
+                        <p class="frase"> Enjoy clear pricing with no hidden
+                         fees, ensuring you know exactly what you’re paying for.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong class="linea">Around-the-Clock Support</strong>
+                        <p class="frase">Access 24/7 assistance for any travel
+                         needs, so you're never alone on your journey.</p>
+                    </td>
+                    <td>
+                        <strong class="linea">Exclusive Offers</strong>
+                        <p class="frase">Take advantage of unique deals 
+                        through our partnerships with top hotels 
+                        and service providers.</p>
+                    </td>
+                </tr>
+            </table>        
+    </div>
+    <!-- Divisor de apartado -->
+    <div class="divider"></div>
+    
+    <!-- (Apartado 3) -->
+    <div class="container">
+        <div class="fotosa3" id="insertarfoto1">
+            <div class="cuadrado" id="color">
+                <strong>Flexible Cancellation Policy</strong>
+                <p>Your peace of mind is our priority, with hassle-free cancellation options.</p>
+            </div>
+        </div>
+    
+        <div class="fotosa3" id="insertarfoto2">
+            <div class="cuadrado">
+                <strong>Referral Discounts</strong>
+                <p>Tell your friends and enjoy the benefits on your next booking.</p>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Divisor de apartado -->
+    <div class="divider"></div>
+
+    <div class="contact-section" id="contact-section">
+        <h2>Don't hesitate to contact us!</h2>
+        <p class="required-note">"*" indicates required fields</p>
+        
+        <form action="#">
+            <input type="text" id="name" name="name" placeholder="Name*" required>
+            <input type="email" id="email" name="email" placeholder="Email* (pattern: email@email.com)" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone* (pattern: 999 999 999)" maxlength="9" pattern="\d{9}">
+            
+            <!-- Desplegable para Nacionalidad -->
+            <select id="nationality" name="nationality" required>
+                <option value="" disabled selected>Select Nationality*</option>
+                <option value="spain">Spain</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="netherlands">Netherlands</option>
+            </select>
+            
+            <!-- Desplegable para Ciudad -->
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Select Destination*</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="madrid">Madrid</option>
+                <option value="valencia">Valencia</option>
+                <option value="cartagena">Cartagena</option>
+                <option value="paris">Paris</option>
+                <option value="rome">Rome</option>
+                <option value="london">London</option>
+            </select>
+            
+            <!-- Caja de texto para escribir la duda -->
+            <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="footer-section">
+            <h3>VISIT US</h3>
+            <p>89 N. First Avenue,<br> Madrid, 28001</p>
+            <p>(34) 664-8889</p>
+            <p><a>golden@travel.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>COPYRIGHT</h3>
+            <p> <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+                <a property="dct:title" rel="cc:attributionURL" href="https://golden.travel.es">Golden Travel
+                </a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://kimberly.es">Kimberly Paredes
+                </a> is licensed under 
+                <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                    <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+                </a>
+            </p>
+         </p>
+        </div>
+        <div class="footer-logo">
+            <!-- Insertar foto de logo -->
+            <img src="fotos/logo_white.png" alt="Agencia Logo">
+        </div>
+        <div class="footer-section">
+            <h3>DESTINATIONS</h3>
+            <a href="local.html">Local</a>
+            <a href="/abroad.html">Abroad</a>
+        </div>
+        <div class="footer-section">
+            <h3>STAY CONNECTED</h3>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

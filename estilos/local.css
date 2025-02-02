@@ -1,0 +1,36 @@
+/* ESTILOS PARA LA PÁGINA 'LOCAL.HTML' (Apartado 1)*/
+/* Estilo para el contenedor de la portada (Apartado 1) */
+#portada2 {
+    background-image: url('/fotos/local.jpg'); /* Ruta de la imagen */
+}
+
+/* Botón 'Local Destinations' */
+#local {
+    font-size: 3rem;
+    margin-bottom: 4.1rem;
+}
+
+/* Contenedor de 'Local Destinatios' */
+.localboton {
+    display: flex;
+    justify-content: right;
+}
+
+/* DESTINOS LOCALES FOTOS (Apartado 2) */
+#insertarfoto3{
+    background-image: url('/fotos/madrid.jpg'); /* inseratar imagen */ 
+}
+
+#insertarfoto4 {
+    background-image: url('/fotos/valencia.jpg'); /* insertar imagen */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+#insertarfoto5{
+    background-image: url('/fotos/barcelona.jpg'); /* inseratar imagen */ 
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+#insertarfoto6 {
+    background-image: url('/fotos/cartagena.jpg'); /* insertar imagen */
+}

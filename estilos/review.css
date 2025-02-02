@@ -1,0 +1,24 @@
+/* ESTILOS PARA LA PÁGINA 'REVIEW.HTML' */
+/* Insertar foto de portada (div apartado 1) */
+
+#portada4 {
+    background-image: url('/fotos/review.jpg'); /* Ruta de la imagen */
+}
+
+/* Estilo para el apartado 2 de la página Review */
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    padding: 3rem;
+}
+
+.columna {
+    flex: 25%;
+    padding: 5px;
+}
+
+.imgr {
+    width: 100%;
+    border-radius: 3rem;
+}

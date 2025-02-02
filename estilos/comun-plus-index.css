@@ -1,0 +1,391 @@
+/* PÁGINA INDEX.HTML (SERVIRÁ DE PLANTILLA PARA LAS PÁGINAS FUTURAS) */
+/* Estilos para LANDING PAGE de INDEX (Apartado 1)*/
+
+/* Estilo base para la página */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evitar scroll horizontal */
+    overflow-y:visible; /* Para que no se vea la barra vertical de scroll */
+}
+
+/* Estilo para el contenedor de la portada */
+.portada {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* view port, el div ocupa el 100% de la pantlla */
+    overflow: hidden;
+    display: flex;
+}
+
+/* Estilo para el contenedor de la portada */
+.landingpage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajuste para cubrir toda el área */
+    background-position: center; /* Centra la imagen */
+}
+
+/* Insertar imagen */
+#portada1 {
+    background-image: url('/fotos/portada.jpg'); /* Ruta de la imagen */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: absolute; /* Fija la barra en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    right: 0; /* Alineado a la izquierda */
+    padding: 1% 2%; /* Espaciado interno */
+    margin-top: 2%; /* Espacio externo superior menú*/
+    margin-right: 7%; /*Espacio externo en la derecho */
+    z-index: 1; /* Asegura que esté por encima de otros elementos con z-index menor */
+}
+
+/* Estilos para los enlaces del menú */
+.navbar a {
+    color: #000000; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 170%;
+    font-family: 'MiFuente', system-ui, Roboto, Oxygen, Ubuntu;
+    margin:  1rem; /* Espaciado entre enlaces */
+}
+
+/* Efecto hover para los enlaces del menú */
+.navbar a:hover {
+    text-decoration: underline; /* Agrega el subrayado al pasar el cursor */
+    text-underline-position: below; /* Posición del subrayado */
+}
+
+/* Estilo del título de landing page la palabra 'Golden' y 'Travel' */
+.titulo{
+    position: absolute;
+    z-index: 1; /* Asegura que esté por encima de otros elementos con z-index menor */
+    font-family: HelveticaNowDisplay,Arial,sans-serif;
+}
+
+/* Tamaño y posición de 'Golden' */
+#golden {
+    font-size: 11.7rem;
+    letter-spacing: -1.2rem; /* Reduce el espacio entre letras */
+    margin-top: -15rem; /* baja el texto de  */
+    margin-left: 3rem;
+}
+
+/* Tamaño y posición de 'Travel' */
+#travel {
+    font-size: 4rem;
+    letter-spacing: -0.3rem; /* Reduce el espacio entre letras */
+    margin-top: 12rem;
+    margin-left: 47rem;
+}
+
+/* Cambiar el formato del enlace en 'Golden' y 'Travel' */
+.titulo a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/* Estilo de los botones de oferta y booking */
+.boton {
+    position: absolute;
+    z-index: 1; /* Asegura que esté por encima de otros elementos con z-index menor */
+    background-color: #fff537;
+    padding: 0.8rem 1.5rem; /* Espacio desde el texto hacie el borde del botón */
+    border: none;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease; /* Cualquier cambio de color de fondo se hará gradualmente */
+    /* Estilo del font del botón */
+    color: #000000;
+    font-family: HelveticaNowDisplay, system-ui, Roboto, Oxygen, Ubuntu;
+    font-weight: 700; /* Le aplica formato bold */
+    font-size: 2.2rem;
+    letter-spacing: -0.05rem; /* Reduce el espacio entre letras */
+    bottom: 7rem; /* Ajusta según a partir la parte nferior */
+}
+
+/* Efecto hover de los botones de oferta y booking */
+.boton:hover {
+    background-color: #ff9c07; /* Cambia de color al pasar el cursor */
+}
+ /* Posición de ofertas */
+#unob{
+    right: 9rem;/* Ajusta según la posición deseada */
+}
+
+/* Posición de booking */
+#dosb{
+    right: 42rem;/* Ajusta según la posición deseada */
+}
+
+/* Estilo del slogan */
+.slogan {
+    position: absolute;
+    z-index: 1; /* Asegura que esté sobre la foto de portada */
+    bottom: 3rem; /* Posición en la parte superior */
+    left: 5rem; /* Alineado a la izquierda */
+    color: white;
+    font-family: HelveticaNowDisplay, system-ui, Roboto, Oxygen, Ubuntu;
+    font-size: 1.6rem;
+    font-weight: 650; /* Le aplica formato bold */
+}
+
+/* Divisor de apartado */
+.divider {
+    width: 80rem; /* Ancho con respecto a ancho máximo */
+    max-width: 100rem; /* Ancho máximo */
+    height: 1px; /* Grosor de la línea */
+    background-color: #828282; /* Color gris */
+    margin: 3.5rem auto; /* Espaciado arriba y abajo */
+}
+
+/* Apartado 2 - TRAVEL SHOULD BE MORE THAN LOGISTICS */
+
+.nosotros {
+    margin-right: 12rem;
+    text-align: right; /* Alinea el contenido de texto a la derecha */
+    display: list-item;
+}
+.webelieve {
+    font-family: HelveticaNowDisplay, system-ui, Roboto, Oxygen, Ubuntu;
+    font-size: 4.4rem;
+    letter-spacing: -0.3rem; /* Reduce el espacio entre letras */
+    font-weight: 700; /* Le aplica formato bold */
+    line-height: 4.8rem; /* Interlineado */
+    text-align: right;
+    margin-left: 10rem;
+}
+
+ /* Formato de la tabla que contiene: Personalized Journeys, Around-the-Clock Support, Transparent Pricing, Exclusive Offers */
+.tabla {
+    width: 50rem; /* Ancho de la tabla */
+    max-width: 100rem;
+    margin-left: auto;
+}
+
+/* Formato de las celdas de la tabla */
+.tabla td {
+    border: none; /* Bordes de la tabla */
+    padding: 1rem; /* Espaciado interno */
+    padding-left: 1rem;
+    text-align: center;
+    font-family: MiFuente, HelveticaNowDisplay, system-ui, Roboto, Oxygen, Ubuntu;
+    font-size: 1.5rem;
+    letter-spacing: -0.06rem; /* Reduce el espacio entre letras */
+    text-underline-position: below; /* Posición del subrayado */
+}
+
+/* Formato de la frase dentro de la celda */
+.frase {
+    color: #c6bf45;
+    font-size: 1.2rem;
+}
+
+/* Apartado 3 - NUESTRAS VENTAJAS*/
+/* Contenedor de las imágenes */
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+}
+
+/* Estilo de las imágenes */
+.fotosa3 {
+    background-size: 100%; /* Ajuste para cubrir toda el área del div*/
+    background-position: center; /* Centra la imagen */
+    width: 50%; /* Ancho que podrá ocupar para que se pueda insertar 2 imágenes*/
+    max-width: 100rem; /* Ancho máximo */
+    height: 45.7rem; /* Altura */
+    box-sizing: border-box; /* asegura que el ancho y alto de un elemento incluyan el padding y el borde de la caja*/
+    transition: background-size 0.5s ease; /* Cualquier transición con respecto al tamaño del fondo será suae */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centra las imagenes dentro de su contenedor */
+    align-items: center; /* Centra el cuadro .cuadrado dentro de cada .fotosa3 */
+}
+
+#insertarfoto1{
+    background-image: url('/fotos/ciudad.jpg'); /* inseratar imagen */ 
+}
+
+#insertarfoto2 {
+    background-image: url('/fotos/piedra.jpg'); /* insertar imagen */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.fotosa3:hover{
+    background-size: 110%; /* Aumenta la imagen de fondo al pasar el ratón, configuraión previa: transición suave */
+}
+
+#color {
+    background-color: #e0be35; /* Color de fondo del cuadrado */
+}
+
+.cuadrado {
+    background-color: #000000; /* Color de fondo del cuadrado */
+    width: 30rem; /* Ancho del cuadrado */
+    height: 23rem; /* Altura del cuadrado */
+    position:relative; /* Posiciona el cuadrado dentro del contenedor */
+    z-index: 1; /* Asegura que el cuadrado esté encima de la imagen de fondo (.fotosa3) */
+    font-family: MiFuente, HelveticaNowDisplay, system-ui, Roboto, Oxygen, Ubuntu;
+    text-align: center;
+    display: flex; /* Usar Flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Para diferenciar los títulos: Flexible Cancellation Policy, Referral Discounts */
+.cuadrado strong{
+    font-size: 2rem; 
+}
+
+/* Apartado 4 - NO DUDES EN CONTACTARNOS */
+/* Contenedor principal de la sección */
+.contact-section {
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total de la caja */
+    background-color: #ffa600; /* Fondo naranja */
+    text-align: center; /* Centra el texto */
+    margin: 2rem; /* Espacio alrededor del contenedor */
+    font-family: system-ui, Roboto, Oxygen, Ubuntu; /* Fuentes principales */
+    padding: 2rem; /* Espaciado interno */
+}
+
+/* Título de la sección */
+.contact-section h2 {
+    font-size: 1.8rem; /* Tamaño del texto */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 0.6rem 1.2rem; /* Espacio interno */
+    margin: 0 auto 1.5rem auto; /* Centrado y margen inferior */
+    display: inline-block; /* Elemento en línea con comportamiento de bloque */
+    font-weight: 700; /* Texto en negrita */
+}
+
+/* Párrafos de la sección */
+.contact-section p {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #666; /* Texto gris */
+    margin-bottom: 1.5rem; /* Margen inferior */
+    max-width: 40rem; /* Ancho máximo */
+    margin-left: auto; /* Centra el párrafo */
+    margin-right: auto; /* Centra el párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Formulario de contacto */
+.contact-section form {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centra los elementos */
+    gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Texto que indica '* campos obligatorios' */
+.contact-section .required-note {
+    font-size: 0.9rem; /* Texto pequeño */
+    color: #ffcccb; /* Color rojo claro */
+    margin-bottom: 1.5rem; /* Margen inferior */
+}
+
+/* Estilos para campos de entrada */
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+    background: white; /* Fondo blanco */
+    border: none; /* Sin borde */
+    border-bottom: 0.2rem solid #333; /* Línea inferior oscura */
+    color: #333; /* Texto oscuro */
+    padding: 0.6rem; /* Espacio interno */
+    font-size: 1rem; /* Tamaño del texto */
+    width: 100%; /* Ancho completo con respecto al ancho máximo */
+    max-width: 30rem; /* Ancho máximo */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+/* Área de texto 'How can we help?' */
+#message {
+    height: 8rem; /* Altura específica */
+}
+
+/* Botón de envío del formulario */
+.contact-section button {
+    padding: 0.6rem 2rem; /* Espacio interno */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: 0.15rem solid white; /* Borde blanco */
+    font-size: 1rem; /* Tamaño del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el cursor por el botón */
+.contact-section button:hover {
+    background-color: white; /* Fondo blanco */
+    border: solid #333;
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilo general del footer (este apartado se repite en todas páginas) */
+footer {
+    display: flex;
+    justify-content: space-around; /*  controla cómo se distribuyen los elementos a lo largo del eje horizontal */
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'MiFuente', system-ui, Roboto, Oxygen, Ubuntu;
+}
+
+/* Contenedor de las columnas "VISIT US", "COPYRIGHT", "DESTINATIONS", "STAY CONNECTED" */
+.footer-section {
+    max-width: 15rem;
+    font-size: 1.9rem;
+}
+
+/* Estilo de los tútilos de las columnas: "VISIT US", "COPYRIGHT", "DESTINATIONS", "STAY CONNECTED" */
+.footer-section h3 {
+    font-size: 2.3rem; /* Tamaño de fuente ajustado */
+    margin-bottom: 1.2rem;
+    margin-right: 2.3rem;
+    align-content: center;
+}
+
+/* Estilo para los enlaces */
+.footer-section a {
+    display: block; /* Hace que los enlaces ocupen una línea completa */
+    margin: 0.5rem 0;
+    color: #ffa600; /* Color para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón sobre el enlace */
+.footer-section a:hover {
+    color: #ff9e9e; /* Cambia el color al pasar el ratón sobre los enlaces */
+}
+
+/* Estilo para las img que contiene el CopyRight */
+.footer-logo img {
+    width: 35rem; /* Tamaño del logo ajustado */
+    margin: -10rem;
+    margin-top: 1rem;
+}
+
+/* Distribución de los iconos de las redes sociales */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons i {
+    font-size: 3rem; /* Tamaño grande para los iconos */
+    transition: transform 0.3s, color 0.3s;
+    color: #ffa600; /* Color inicial de los iconos */
+}
+
+/* Cambio de color al pasar el ratón sobre el enlace */
+.social-icons i:hover {
+    transform: scale(1.2); /* Efecto de zoom */
+    color: #ff9e9e; /* Cambia el color al hacer hover */
+}
